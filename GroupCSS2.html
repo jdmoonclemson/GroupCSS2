@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlanta Braves</title>
+    <link rel="stylesheet" href="groupAssignment2.css">
+</head>
+<body>
+    <header>
+        <script>document.addEventListener('DOMContentLoaded', () => {
+            fetch('navBar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        });</script>
+        <h1>Atlanta Braves</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roster">Roster</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 style="text-align: center;">About the Braves</h2>
+            <p>The Atlanta Braves are a professional baseball team based in Atlanta, Georgia. Established in 1871, they are one of the oldest continuously operating professional sports franchises in the United States. The team has undergone several name and location changes before settling in Atlanta in 1966.</p>
+            <p>The Braves are part of the National League (NL) East division and have a storied history that includes numerous division titles, pennants, and multiple World Series championships. Their most recent World Series win came in 2021, marking a significant milestone in the franchise's history.</p>
+            <p>The team is known for its passionate fan base, iconic tomahawk logo, and the "Chop," a chant and hand gesture widely recognized in the baseball world. The Braves play their home games at Truist Park, a state-of-the-art stadium located in the Cumberland area of Atlanta. Truist Park offers a unique experience with its adjacent entertainment district, The Battery Atlanta, which features restaurants, shops, and live entertainment.</p>
+            <p>Over the years, the Braves have been home to legendary players such as Hank Aaron, Chipper Jones, Greg Maddux, and John Smoltz. These players have left an indelible mark on the sport and continue to inspire new generations of baseball fans and athletes.</p>
+        </section>
+
+        <section id="roster">
+            <h2 style = "text-align: center;">Team Roster</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ronald Acuña Jr.</td>
+                        <td>Right Fielder</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Ozzie Albies</td>
+                        <td>Second Baseman</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Matt Olson</td>
+                        <td>First Baseman</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Austin Riley</td>
+                        <td>Third Baseman</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Harris II</td>
+                        <td>Center Fielder</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>Marcell Ozuna</td>
+                        <td>Designated Hitter</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Sean Murphy</td>
+                        <td>Catcher</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Orlando Arcia</td>
+                        <td>Shortstop</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Jarred Kelenic</td>
+                        <td>Left Fielder</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Spencer Strider</td>
+                        <td>Pitcher</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <td>Max Fried</td>
+                        <td>Pitcher</td>
+                        <td>54</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Morton</td>
+                        <td>Pitcher</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Ian Anderson</td>
+                        <td>Pitcher</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>Raisel Iglesias</td>
+                        <td>Relief Pitcher</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>A.J. Minter</td>
+                        <td>Relief Pitcher</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Jiménez</td>
+                        <td>Relief Pitcher</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <td>Kirby Yates</td>
+                        <td>Relief Pitcher</td>
+                        <td>39</td>
+                    </tr>
+                    <tr>
+                        <td>Collin McHugh</td>
+                        <td>Relief Pitcher</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Dylan Lee</td>
+                        <td>Relief Pitcher</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>Nick Anderson</td>
+                        <td>Relief Pitcher</td>
+                        <td>19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>        
+        <section id="gallery">
+            <h2 style = "text-align: center;">Photo Gallery</h2>
+            <div class="gallery">
+                <img src="atlanta_braves.png" alt="Atlanta Braves Logo" class="float-image">
+                <img src="Chipper Jones.webp" alt="Chipper Jones and Teammate" class="float-image">
+                <img src="Ronald.jpeg" alt="Ronald Acuña Jr. with Teammates" class="float-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Atlanta Braves Fan Page. All rights reserved.</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
