@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlanta Braves</title>
     <link rel="stylesheet" href="groupAssignment2.css">
+    <script src="https://kit.fontawesome.com/0cc84389cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <script>document.addEventListener('DOMContentLoaded', () => {
- fetch('navBar.html')
- .then(response => response.text())
-    .then(data => {
-     document.getElementById('navbar').innerHTML = data;
-                });
-        });</script>
+    <div id="navbar"></div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        fetch('navBar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    });</script>
     <header>
+        <!-- header -->
         <h1>Atlanta Braves</h1>
         <nav>
+            <!-- unordered list -->
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#roster">Roster</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- ordered list -->
+            <ol>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roster">Roster</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
         </nav>
     </header>
 
@@ -34,9 +45,10 @@
             <p>The team is known for its passionate fan base, iconic tomahawk logo, and the "Chop," a chant and hand gesture widely recognized in the baseball world. The Braves play their home games at Truist Park, a state-of-the-art stadium located in the Cumberland area of Atlanta. Truist Park offers a unique experience with its adjacent entertainment district, The Battery Atlanta, which features restaurants, shops, and live entertainment.</p>
             <p>Over the years, the Braves have been home to legendary players such as Hank Aaron, Chipper Jones, Greg Maddux, and John Smoltz. These players have left an indelible mark on the sport and continue to inspire new generations of baseball fans and athletes.</p>
         </section>
-
+        
         <section id="roster">
             <h2 style = "text-align: center;">Team Roster</h2>
+            <!-- table -->
             <table>
                 <thead>
                     <tr>
@@ -150,18 +162,28 @@
             </table>
         </section>        
         <section id="gallery">
-            <h2 style = "text-align: center;">Photo Gallery</h2>
+            <h2>Photo Gallery</h2>
+            <!-- image gallary with float  -->
             <div class="gallery">
-                <img src="atlanta_braves.png" alt="Atlanta Braves Logo" class="float-image">
-                <img src="Chipper Jones.webp" alt="Chipper Jones and Teammate" class="float-image">
-                <img src="Ronald.jpeg" alt="Ronald Acuña Jr. with Teammates" class="float-image">
+                <img src="atlanta_braves.png" alt="Atlanta Braves Logo" style="float: left; margin: 10px; width: 200px;">
+                <img src="Chipper Jones.webp" alt="Chipper Jones and Teammate" style="float: right; margin: 10px; width: 200px;">
+                <img src="Ronald.jpeg" alt="Ronald Acuña Jr. with Teammates" style="float: left; margin: 10px; width: 200px;">
             </div>
         </section>
     </main>
 
     <footer>
+        <!-- footer and icons-->
+        <i class="fas fa-cloud"></i>
         <p>© 2025 Atlanta Braves Fan Page. All rights reserved.</p>
-        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <i class="fas fa-cloud"></i>
+        <p>
+            Follow us on 
+            <a href="#"><i class="bi bi-twitter"></i> Twitter</a> | 
+            <a href="#"><i class="bi bi-facebook"></i> Facebook</a> | 
+            <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+        </p>
     </footer>
+</main>
 </body>
 </html>
