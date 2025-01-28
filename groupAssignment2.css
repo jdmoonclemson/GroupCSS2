@@ -2,21 +2,31 @@ body {
     background-color: red;
     color: rgb(255, 255, 255);
 }
-
+/*used to create the box model*/
 header, footer {
     border: 2px solid white;
     padding: 10px;
     text-align: center;
 }
-
+/*makes the ordered and unordered list disaper*/
 nav ul {
-    list-style-type: none;
+    list-style-type: square;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+/*makes the ordered list with s*/
+nav ol {
+    list-style-type: lower-roman;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 nav ul li a {
     color: rgb(254, 254, 254);
@@ -57,6 +67,8 @@ div.gallery img {
     border: 2px solid white;
     width: 30%;
     border-radius: 5px;
+    /*has all of the images floating left*/
+    float: left;
 }
 
 a {
